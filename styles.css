@@ -14,6 +14,11 @@ header .navbar{
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 header .nav-brand{
     text-decoration: none;
@@ -37,6 +42,12 @@ header .nav-list{
     gap: 5rem;   
     padding: 2rem;
 }
+/* RESPONSIVIDADE NAVBAR */
+@media (max-width: 768px) {
+    header .nav-list{
+        display: none;
+    }
+}
 header .nav-list a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -57,6 +68,16 @@ h1{
     text-align: center;
     margin-top: 2rem;
 }
+@media (max-width: 1024px) {
+    h1{
+        font-size: 3rem;
+    }
+    span{
+        font-size: 2rem;
+    }
+
+    
+}
 span{
     font-family:'Times New Roman', Times, serif, sans-serif;
     font-size: 10rem;
@@ -72,11 +93,11 @@ span:hover{
     transition: all 1s ease-in-out;
 }
 img{
-    width: 30rem;
+    width: 40rem;
     height: auto;
     object-fit: cover;
     display: block;
-    margin: 0 10rem;  
+    margin: 1rem 0 10rem;  
 }
 .discount{
     width: 30rem;
@@ -89,6 +110,27 @@ img{
     position: absolute;
     filter: drop-shadow(5px 5px 10px rgb(243, 243, 243));
 }
+@media (max-width: 1024px){
+     img{
+        width: 25rem;
+        height: auto; 
+    }
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 2rem;
+    }
+    span{
+        font-size: 3rem;
+    }
+    
+    img{
+        width: 10rem;
+        height: auto; 
+    }
+    .discount{
+        display: none;
+    }}
 h3{
     font-family: "Rowdies", sans-serif;
     font-size: 3rem;
@@ -113,6 +155,26 @@ h5{
     left: 45%;
     position: absolute;
     text-shadow: 5px 20px 20px #FFD700;
+}
+@media screen and (max-width: 768px) {
+    h5{
+        font-size: 5rem;
+        top: 60%;
+        left: 30%;
+    }
+    h3{
+        font-size: 2rem;
+        top: 50%;
+        left: 20%;
+    }
+    span{
+        font-size: 2rem;
+    }
+    img{
+        width: 10rem;
+        height: auto; 
+    }
+    
 }
 /* 🛑🛑 */
 /* 🟢 section 2🟢 */
@@ -156,7 +218,7 @@ h5{
     height: auto;
     width: 30rem;
     margin: 0 auto;
-    margin-left: 30%;
+    margin-left: 38%;
 }
 #brain{
      font-family: "Rowdies", sans-serif;
@@ -177,7 +239,7 @@ h5{
     height: auto;
     display: flex;
     top: 55%;
-    left: 29%;
+    left: 20%;
     position: absolute;
 }
 .x3 img{
@@ -209,7 +271,7 @@ h5{
     width: 30rem;
     height: auto;
     display: flex;
-    margin: 2rem 5rem 5rem 5rem;
+    margin-top: 1rem;
     position: relative;
 }
 /* 🛑🛑 */
